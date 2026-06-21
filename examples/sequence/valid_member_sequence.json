@@ -1,0 +1,107 @@
+{
+  "schema_version": "0.1.0",
+  "level": "member",
+  "steps": [
+    {
+      "order": 0,
+      "target_id": "m-001",
+      "action": "place_bottom_plate"
+    },
+    {
+      "order": 1,
+      "target_id": "m-007",
+      "action": "nail_king_stud",
+      "depends_on": ["m-001"]
+    },
+    {
+      "order": 2,
+      "target_id": "m-014",
+      "action": "nail_king_stud",
+      "depends_on": ["m-001"]
+    },
+    {
+      "order": 3,
+      "target_id": "m-004",
+      "action": "nail_stud",
+      "depends_on": ["m-001"]
+    },
+    {
+      "order": 4,
+      "target_id": "m-005",
+      "action": "nail_stud",
+      "depends_on": ["m-001"]
+    },
+    {
+      "order": 5,
+      "target_id": "m-006",
+      "action": "nail_stud",
+      "depends_on": ["m-001"]
+    },
+    {
+      "order": 6,
+      "target_id": "m-008",
+      "action": "nail_jack_stud",
+      "depends_on": ["m-007"]
+    },
+    {
+      "order": 7,
+      "target_id": "m-013",
+      "action": "nail_jack_stud",
+      "depends_on": ["m-014"]
+    },
+    {
+      "order": 8,
+      "target_id": "m-012",
+      "action": "set_header",
+      "depends_on": ["m-008", "m-013"]
+    },
+    {
+      "order": 9,
+      "target_id": "m-009",
+      "action": "nail_sill",
+      "depends_on": ["m-008", "m-013"]
+    },
+    {
+      "order": 10,
+      "target_id": "m-010",
+      "action": "nail_cripple_stud",
+      "depends_on": ["m-009"]
+    },
+    {
+      "order": 11,
+      "target_id": "m-011",
+      "action": "nail_cripple_stud",
+      "depends_on": ["m-009"]
+    },
+    {
+      "order": 12,
+      "target_id": "m-015",
+      "action": "nail_stud",
+      "depends_on": ["m-001"]
+    },
+    {
+      "order": 13,
+      "target_id": "m-016",
+      "action": "nail_stud",
+      "depends_on": ["m-001"]
+    },
+    {
+      "order": 14,
+      "target_id": "m-017",
+      "action": "nail_stud",
+      "depends_on": ["m-001"]
+    },
+    {
+      "order": 15,
+      "target_id": "m-002",
+      "action": "place_top_plate_1",
+      "depends_on": ["m-001"]
+    },
+    {
+      "order": 16,
+      "target_id": "m-003",
+      "action": "place_top_plate_2",
+      "depends_on": ["m-002"]
+    }
+  ]
+}

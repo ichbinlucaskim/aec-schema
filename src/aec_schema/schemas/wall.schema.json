@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aec-schema/wall.schema.json",
+  "title": "Wall",
+  "description": "A wall segment defined by start/end points in plan. All dimensions in mm.",
+  "type": "object",
+  "required": ["schema_version", "id", "start", "end", "thickness", "type", "load_bearing"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "id": { "type": "string" },
+    "start": { "$ref": "#/$defs/point2d" },
+    "end": { "$ref": "#/$defs/point2d" },
+    "thickness": {
+      "type": "number",
+      "minimum": 1,
+      "description": "Wall thickness in mm. 2x4 stud wall = 140mm (incl. sheathing)"
+    },
+    "type": { "type": "string", "enum": ["exterior", "interior"] },
+    "load_bearing": { "type": "boolean" },
+    "adjacent_rooms": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "ids of rooms on each side of this wall"
+    },
+    "hosted_openings": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "ids of Opening objects hosted by this wall"
+    }
+  },
+  "$defs": {
+    "point2d": {
+      "type": "object",
+      "required": ["x", "y"],
+      "additionalProperties": false,
+      "properties": {
+        "x": { "type": "number", "description": "mm" },
+        "y": { "type": "number", "description": "mm" }
+      }
+    }
+  }
+}

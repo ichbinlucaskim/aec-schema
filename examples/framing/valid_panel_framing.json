@@ -1,0 +1,160 @@
+{
+  "schema_version": "0.1.0",
+  "panel_id": "panel-001",
+  "member_count": 17,
+  "members": [
+    {
+      "id": "m-001",
+      "type": "plate",
+      "role": "bottom_plate",
+      "section": "2x4",
+      "start": { "x": 0.0, "y": 0.0, "z": 0.0 },
+      "end": { "x": 3600.0, "y": 0.0, "z": 0.0 },
+      "length": 3600.0
+    },
+    {
+      "id": "m-002",
+      "type": "plate",
+      "role": "top_plate",
+      "section": "2x4",
+      "start": { "x": 0.0, "y": 0.0, "z": 2667.0 },
+      "end": { "x": 3600.0, "y": 0.0, "z": 2667.0 },
+      "length": 3600.0
+    },
+    {
+      "id": "m-003",
+      "type": "plate",
+      "role": "top_plate",
+      "section": "2x4",
+      "start": { "x": 0.0, "y": 0.0, "z": 2705.0 },
+      "end": { "x": 3600.0, "y": 0.0, "z": 2705.0 },
+      "length": 3600.0
+    },
+    {
+      "id": "m-004",
+      "type": "stud",
+      "role": "standard_stud",
+      "section": "2x4",
+      "start": { "x": 38.0, "y": 0.0, "z": 38.0 },
+      "end": { "x": 38.0, "y": 0.0, "z": 2667.0 },
+      "length": 2629.0
+    },
+    {
+      "id": "m-005",
+      "type": "stud",
+      "role": "standard_stud",
+      "section": "2x4",
+      "start": { "x": 444.0, "y": 0.0, "z": 38.0 },
+      "end": { "x": 444.0, "y": 0.0, "z": 2667.0 },
+      "length": 2629.0
+    },
+    {
+      "id": "m-006",
+      "type": "stud",
+      "role": "standard_stud",
+      "section": "2x4",
+      "start": { "x": 850.0, "y": 0.0, "z": 38.0 },
+      "end": { "x": 850.0, "y": 0.0, "z": 2667.0 },
+      "length": 2629.0
+    },
+    {
+      "id": "m-007",
+      "type": "king",
+      "role": "king_stud",
+      "section": "2x4",
+      "start": { "x": 1260.0, "y": 0.0, "z": 38.0 },
+      "end": { "x": 1260.0, "y": 0.0, "z": 2667.0 },
+      "length": 2629.0
+    },
+    {
+      "id": "m-008",
+      "type": "jack",
+      "role": "jack_stud",
+      "section": "2x4",
+      "start": { "x": 1298.0, "y": 0.0, "z": 38.0 },
+      "end": { "x": 1298.0, "y": 0.0, "z": 2171.0 },
+      "length": 2133.0
+    },
+    {
+      "id": "m-009",
+      "type": "sill",
+      "role": "sill",
+      "section": "2x4",
+      "start": { "x": 1298.0, "y": 0.0, "z": 952.0 },
+      "end": { "x": 2338.0, "y": 0.0, "z": 952.0 },
+      "length": 1040.0
+    },
+    {
+      "id": "m-010",
+      "type": "cripple",
+      "role": "cripple_stud",
+      "section": "2x4",
+      "start": { "x": 1662.0, "y": 0.0, "z": 38.0 },
+      "end": { "x": 1662.0, "y": 0.0, "z": 952.0 },
+      "length": 914.0
+    },
+    {
+      "id": "m-011",
+      "type": "cripple",
+      "role": "cripple_stud",
+      "section": "2x4",
+      "start": { "x": 2068.0, "y": 0.0, "z": 38.0 },
+      "end": { "x": 2068.0, "y": 0.0, "z": 952.0 },
+      "length": 914.0
+    },
+    {
+      "id": "m-012",
+      "type": "header",
+      "role": "header",
+      "section": "2x8",
+      "start": { "x": 1260.0, "y": 0.0, "z": 2171.0 },
+      "end": { "x": 2376.0, "y": 0.0, "z": 2171.0 },
+      "length": 1116.0
+    },
+    {
+      "id": "m-013",
+      "type": "jack",
+      "role": "jack_stud",
+      "section": "2x4",
+      "start": { "x": 2338.0, "y": 0.0, "z": 38.0 },
+      "end": { "x": 2338.0, "y": 0.0, "z": 2171.0 },
+      "length": 2133.0
+    },
+    {
+      "id": "m-014",
+      "type": "king",
+      "role": "king_stud",
+      "section": "2x4",
+      "start": { "x": 2376.0, "y": 0.0, "z": 38.0 },
+      "end": { "x": 2376.0, "y": 0.0, "z": 2667.0 },
+      "length": 2629.0
+    },
+    {
+      "id": "m-015",
+      "type": "stud",
+      "role": "standard_stud",
+      "section": "2x4",
+      "start": { "x": 2782.0, "y": 0.0, "z": 38.0 },
+      "end": { "x": 2782.0, "y": 0.0, "z": 2667.0 },
+      "length": 2629.0
+    },
+    {
+      "id": "m-016",
+      "type": "stud",
+      "role": "standard_stud",
+      "section": "2x4",
+      "start": { "x": 3188.0, "y": 0.0, "z": 38.0 },
+      "end": { "x": 3188.0, "y": 0.0, "z": 2667.0 },
+      "length": 2629.0
+    },
+    {
+      "id": "m-017",
+      "type": "stud",
+      "role": "standard_stud",
+      "section": "2x4",
+      "start": { "x": 3562.0, "y": 0.0, "z": 38.0 },
+      "end": { "x": 3562.0, "y": 0.0, "z": 2667.0 },
+      "length": 2629.0
+    }
+  ]
+}

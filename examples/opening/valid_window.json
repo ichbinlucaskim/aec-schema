@@ -1,0 +1,10 @@
+{
+  "schema_version": "0.1.0",
+  "id": "opening-window-001",
+  "type": "window",
+  "host_wall": "wall-001",
+  "position": 1800.0,
+  "width": 914.0,
+  "height": 1219.0,
+  "swing_direction": "none"
+}

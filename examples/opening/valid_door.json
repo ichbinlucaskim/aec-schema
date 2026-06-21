@@ -1,0 +1,10 @@
+{
+  "schema_version": "0.1.0",
+  "id": "opening-door-001",
+  "type": "door",
+  "host_wall": "wall-001",
+  "position": 914.0,
+  "width": 914.0,
+  "height": 2032.0,
+  "swing_direction": "left"
+}

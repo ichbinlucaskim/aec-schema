@@ -1,0 +1,12 @@
+{
+  "schema_version": "0.1.0",
+  "id": "panel-001",
+  "parent_wall": "wall-001",
+  "start": { "x": 0.0, "y": 0.0 },
+  "end": { "x": 3600.0, "y": 0.0 },
+  "length": 3600.0,
+  "height": 2743.0,
+  "panel_type": "exterior",
+  "load_bearing": true,
+  "openings": ["opening-window-001"]
+}

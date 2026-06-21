@@ -1,0 +1,10 @@
+{
+  "schema_version": "0.1.0",
+  "items": [
+    {
+      "section": "2x4",
+      "count": 10,
+      "total_length_mm": 25000.0
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aec-schema/sequence.schema.json",
+  "title": "Sequence",
+  "description": "Fabrication/assembly ordering as a DAG. DAG cycle detection requires Python-level validation via validate_sequence_dag().",
+  "type": "object",
+  "required": ["schema_version", "level", "steps"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "level": {
+      "type": "string",
+      "enum": ["member", "panel"],
+      "description": "'member' = within-panel fabrication order; 'panel' = site assembly order"
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["order", "target_id", "action"],
+        "additionalProperties": false,
+        "properties": {
+          "order": { "type": "integer", "minimum": 0 },
+          "target_id": { "type": "string" },
+          "action": {
+            "type": "string",
+            "description": "Human-readable fabrication/assembly action",
+            "examples": ["place_bottom_plate", "nail_stud", "set_header", "erect_panel"]
+          },
+          "depends_on": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "target_ids of steps that must complete before this one"
+          }
+        }
+      }
+    }
+  }
+}

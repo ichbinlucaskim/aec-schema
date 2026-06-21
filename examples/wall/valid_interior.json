@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1.0",
+  "id": "wall-002",
+  "start": { "x": 1800.0, "y": 0.0 },
+  "end": { "x": 1800.0, "y": 3600.0 },
+  "thickness": 89,
+  "type": "interior",
+  "load_bearing": false,
+  "adjacent_rooms": ["room-living", "room-bedroom"],
+  "hosted_openings": ["opening-door-001"]
+}

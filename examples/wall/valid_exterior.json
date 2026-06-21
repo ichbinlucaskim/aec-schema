@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1.0",
+  "id": "wall-001",
+  "start": { "x": 0.0, "y": 0.0 },
+  "end": { "x": 3600.0, "y": 0.0 },
+  "thickness": 140,
+  "type": "exterior",
+  "load_bearing": true,
+  "adjacent_rooms": ["room-living", "exterior"],
+  "hosted_openings": ["opening-window-001"]
+}

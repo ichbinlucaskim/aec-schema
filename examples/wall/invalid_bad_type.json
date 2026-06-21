@@ -1,0 +1,9 @@
+{
+  "schema_version": "0.1.0",
+  "id": "wall-bad-001",
+  "start": { "x": 0.0, "y": 0.0 },
+  "end": { "x": 3600.0, "y": 0.0 },
+  "thickness": 140,
+  "type": "structural",
+  "load_bearing": true
+}

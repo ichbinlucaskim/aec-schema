@@ -1,0 +1,16 @@
+{
+  "schema_version": "0.1.0",
+  "panel_id": "panel-001",
+  "member_count": 1,
+  "members": [
+    {
+      "id": "m-bad-001",
+      "type": "beam",
+      "role": "standard_stud",
+      "section": "2x4",
+      "start": { "x": 38.0, "y": 0.0, "z": 38.0 },
+      "end": { "x": 38.0, "y": 0.0, "z": 2667.0 },
+      "length": 2629.0
+    }
+  ]
+}

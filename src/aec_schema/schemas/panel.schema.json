@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aec-schema/panel.schema.json",
+  "title": "Panel",
+  "description": "A wall segment split into a transport/assembly unit. All dimensions in mm.",
+  "type": "object",
+  "required": [
+    "schema_version", "id", "parent_wall", "start", "end",
+    "length", "height", "panel_type", "load_bearing"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "id": { "type": "string" },
+    "parent_wall": { "type": "string" },
+    "start": { "$ref": "#/$defs/point2d" },
+    "end": { "$ref": "#/$defs/point2d" },
+    "length": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 3700,
+      "description": "Panel length in mm. Transport max ~3600mm (12ft)"
+    },
+    "height": {
+      "type": "number",
+      "minimum": 1,
+      "description": "Floor-to-ceiling panel height in mm"
+    },
+    "panel_type": { "type": "string", "enum": ["exterior", "interior", "shear"] },
+    "load_bearing": { "type": "boolean" },
+    "openings": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "ids of openings within this panel's span"
+    }
+  },
+  "$defs": {
+    "point2d": {
+      "type": "object",
+      "required": ["x", "y"],
+      "additionalProperties": false,
+      "properties": {
+        "x": { "type": "number", "description": "mm" },
+        "y": { "type": "number", "description": "mm" }
+      }
+    }
+  }
+}

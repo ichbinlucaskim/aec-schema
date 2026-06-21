@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aec-schema/opening.schema.json",
+  "title": "Opening",
+  "description": "A door or window hosted by a wall segment. All dimensions in mm.",
+  "type": "object",
+  "required": ["schema_version", "id", "type", "host_wall", "position", "width", "height"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "id": { "type": "string" },
+    "type": { "type": "string", "enum": ["door", "window"] },
+    "host_wall": { "type": "string", "description": "id of the parent IfcWall segment" },
+    "position": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Distance in mm from the wall start point to the opening centre"
+    },
+    "width": { "type": "number", "minimum": 1, "description": "Clear opening width in mm" },
+    "height": { "type": "number", "minimum": 1, "description": "Clear opening height in mm" },
+    "swing_direction": {
+      "type": "string",
+      "enum": ["left", "right", "double", "sliding", "none"],
+      "description": "Required for doors; use 'none' for windows"
+    }
+  }
+}
